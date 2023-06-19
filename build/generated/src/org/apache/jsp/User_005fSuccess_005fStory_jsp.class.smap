@@ -1,0 +1,18 @@
+SMAP
+User_005fSuccess_005fStory_jsp.java
+JSP
+*S JSP
+*F
++ 0 User_Success_Story.jsp
+User_Success_Story.jsp
++ 1 User_header.jsp
+User_header.jsp
+*L
+5,64:53
+5#1,363:117
+68#0,3:479
+71,17:483
+87,29:500
+116:529,3
+117,81:532
+*E

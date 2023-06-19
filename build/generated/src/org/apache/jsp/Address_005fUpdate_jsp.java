@@ -1,0 +1,272 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class Address_005fUpdate_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>Address Details Update</title>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"bootstrap.min.css\"> \n");
+      out.write("\n");
+      out.write("        <style>\n");
+      out.write("\n");
+      out.write("            body\n");
+      out.write("            {\n");
+      out.write("\n");
+      out.write("                background:url(Imagess/homeImg6.jpg);\n");
+      out.write("                background-position:center;\n");
+      out.write("                background-size: cover;\n");
+      out.write("                position: relative;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .container\n");
+      out.write("            {\n");
+      out.write("                background-image: linear-gradient(to right top, #051937, #003852, #00575b, #327457, #7a8c53);\n");
+      out.write("                margin-top: 10px;\n");
+      out.write("                background: transparent;\n");
+      out.write("                background-color: rgba(255, 255, 255, 0.3);\n");
+      out.write("                border-radius: 10px;\n");
+      out.write("                border: 1px solid rgba(255,255,255,0.3); \n");
+      out.write("                background: rgba(0,0,0,0.5);\n");
+      out.write("                position: relative;\n");
+      out.write("\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("            input\n");
+      out.write("            {\n");
+      out.write("                color: black;\n");
+      out.write("                font-size: 20px;\n");
+      out.write("                font-family: 'Times New Roman';\n");
+      out.write("                font-weight: bold;\n");
+      out.write("\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            h2\n");
+      out.write("            {\n");
+      out.write("                text-align: center;\n");
+      out.write("                color: #fff; font-family: 'Times New Roman'; font-weight: bold;\n");
+      out.write("\n");
+      out.write("            }\n");
+      out.write("            label\n");
+      out.write("            {\n");
+      out.write("                font-family: 'Times New Roman';\n");
+      out.write("                font-size: 22px;\n");
+      out.write("                font-weight: bold;\n");
+      out.write("                color: #fff;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("        </style>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("\n");
+      out.write("        <form action=\"Address\" method=\"post\">\n");
+      out.write("            <script src=\"validation.js\"></script>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("                <div class=\"col-sm-3\"></div>\n");
+      out.write("                <div class=\"col-sm-6\">\n");
+      out.write("                    <div class=\"container\">\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                        <div class=\"address-detail\" class=\"form-group\"><br>\n");
+      out.write("\n");
+      out.write("                            <div class=\"row\">\n");
+      out.write("                                <div class=\"col-sm-4\"></div>\n");
+      out.write("                                <div class=\"col-sm-5\">\n");
+      out.write("                                    <h2> Adresss Details</h2>\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"col-sm-3\"></div>\n");
+      out.write("                            </div><br>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                            <div class=\"row\">\n");
+      out.write("                                <div class=\"col-sm-3\"></div>\n");
+      out.write("                                <div class=\"col-sm-6\">\n");
+      out.write("\n");
+      out.write("                                    <label>User Id :</label> \n");
+      out.write("                                    <input type=\"text\" name=\"uid\" value=\"");
+      out.print(request.getParameter("uid"));
+      out.write("\" class=\"form-control\" id=\"name\" placeholder=\"Enter ID\" onkeypress=\"javascript:return isNumber(event)\" >\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"col-sm-3\">  </div>\n");
+      out.write("\n");
+      out.write("                            </div><br>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                            <div class=\"row\">\n");
+      out.write("                                <div class=\"col-sm-3\"></div>\n");
+      out.write("                                <div class=\"col-sm-6\">\n");
+      out.write("\n");
+      out.write("                                    <label>Country :</label> \n");
+      out.write("                                    <select name=\"country\" class=\"form-control\">\n");
+      out.write("                                        <option>Select</option>\n");
+      out.write("                                        <option selected=\"\" >");
+      out.print(request.getParameter("country"));
+      out.write("</option>\n");
+      out.write("                                        <option>India</option>\n");
+      out.write("                                        <option>Other</option>\n");
+      out.write("                                    </select>\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"col-sm-3\">  </div>\n");
+      out.write("\n");
+      out.write("                            </div><br>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                            <div class=\"row\">\n");
+      out.write("                                <div class=\"col-sm-3\"></div>\n");
+      out.write("                                <div class=\"col-sm-6\">\n");
+      out.write("\n");
+      out.write("                                    <label>State :</label> \n");
+      out.write("                                    <select name=\"state\" class=\"form-control\">\n");
+      out.write("                                        <option>Select</option>\n");
+      out.write("                                        <option selected=\"\" >");
+      out.print(request.getParameter("state"));
+      out.write("</option>\n");
+      out.write("\n");
+      out.write("                                        <option>Maharashtra</option>\n");
+      out.write("                                        <option>other</option>\n");
+      out.write("                                    </select>\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"col-sm-3\">  </div>\n");
+      out.write("\n");
+      out.write("                            </div><br>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                            <div class=\"row\">\n");
+      out.write("                                <div class=\"col-sm-3\"></div>\n");
+      out.write("                                <div class=\"col-sm-6\">\n");
+      out.write("\n");
+      out.write("                                    <label>City :</label> \n");
+      out.write("                                    <select name=\"city\" class=\"form-control\">\n");
+      out.write("                                        <option>Select</option>\n");
+      out.write("                                        <option selected=\"\" >");
+      out.print(request.getParameter("city"));
+      out.write("</option>\n");
+      out.write("                                        <option>Ahamadnagar</option>\n");
+      out.write("                                        <option>Akola</option>\n");
+      out.write("                                        <option>Amravti</option>\n");
+      out.write("                                        <option>Aurangabad</option>\n");
+      out.write("                                        <option>Beed</option>\n");
+      out.write("                                        <option>Bhandara</option>\n");
+      out.write("                                        <option>Buldhana</option>\n");
+      out.write("                                        <option>Chandrapur</option>\n");
+      out.write("                                        <option>Dhule</option>\n");
+      out.write("                                        <option>Gadchiroli</option>\n");
+      out.write("                                        <option>Gondiya</option>\n");
+      out.write("                                        <option>Hingoli</option>\n");
+      out.write("                                        <option>Jalgaon</option>\n");
+      out.write("                                        <option>Jalna</option>\n");
+      out.write("                                        <option>Kolhapur</option>\n");
+      out.write("                                        <option>Latur</option>\n");
+      out.write("                                        <option>Mumbai</option>\n");
+      out.write("                                        <option>Nagpur</option>\n");
+      out.write("                                        <option>Nanded</option>\n");
+      out.write("                                        <option>Nandurbar</option>\n");
+      out.write("                                        <option>Nashik</option>\n");
+      out.write("                                        <option>Osmanabad</option>\n");
+      out.write("                                        <option>Palghar</option>\n");
+      out.write("                                        <option>Parbhani</option>\n");
+      out.write("                                        <option>Pune</option>\n");
+      out.write("                                        <option>Raygad</option>\n");
+      out.write("                                        <option>Ratnagiri</option>\n");
+      out.write("                                        <option>Sangali</option>\n");
+      out.write("                                        <option>Satara</option>\n");
+      out.write("                                        <option>Saidhudurg</option>\n");
+      out.write("                                        <option>Solapur</option>\n");
+      out.write("                                        <option>Thane</option>\n");
+      out.write("                                        <option>Wardha</option>\n");
+      out.write("                                        <option>Washim</option>\n");
+      out.write("                                        <option>Yavatmal</option>\n");
+      out.write("                                    </select>\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"col-sm-3\">  </div>\n");
+      out.write("\n");
+      out.write("                            </div><br><br>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                            <div class=\"row\">\n");
+      out.write("                                <div class=\"col-sm-2\"></div>\n");
+      out.write("                                <div class=\"col-sm-4\">\n");
+      out.write("                                    <input type=\"Submit\" name=\"btn\" value=\"Update\" class=\"btn btn-primary form-control \"  style=\"font-family: 'Times New Roman';\"></a>\n");
+      out.write("                                </div>  <div class=\"col-sm-4\">\n");
+      out.write("\n");
+      out.write("                                    <input type=\"Submit\" name=\"btn\" value=\"Delete\" class=\"btn btn-danger form-control \"  style=\"font-family: 'Times New Roman';\">\n");
+      out.write("                                </div>\n");
+      out.write("\n");
+      out.write("                                <div class=\"col-sm-2\"></div>\n");
+      out.write("                            </div><br><br>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-3\"></div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </form>\n");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+SMAP
+Admin_005fsuccess_005fstory_jsp.java
+JSP
+*S JSP
+*F
++ 0 Admin_success_story.jsp
+Admin_success_story.jsp
++ 1 Admin_header.jsp
+Admin_header.jsp
+*L
+5,66:53
+5#1,157:119
+70#0,3:276
+73,17:280
+89,33:297
+122:330,3
+123,82:333
+*E

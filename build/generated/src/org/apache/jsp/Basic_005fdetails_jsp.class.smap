@@ -1,0 +1,18 @@
+SMAP
+Basic_005fdetails_jsp.java
+JSP
+*S JSP
+*F
++ 0 Basic_details.jsp
+Basic_details.jsp
++ 1 User_header.jsp
+User_header.jsp
+*L
+5,60:53
+5#1,357:113
+64#0,3:469
+67,17:473
+83,28:490
+111:518,3
+112,85:521
+*E
